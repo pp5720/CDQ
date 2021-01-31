@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="JiuMeilove"/>
+<title>比心</title>
+<style>。
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		min-height: 100vh;
+		height: 100vh;
+		min-width: 100%;
+		background-color: #0f0f0f;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	body>section>div:first-of-type {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 8%;
+	}
+	body>section>div:first-of-type>p {
+		text-align: center;
+		font-size: 7em;
+		margin: 0 auto;
+		text-decoration: none;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+		color: #FF1177;
+		font-family: 华文行楷;
+	}
+	body>section:hover p {
+		-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+		-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+		animation: neon1 1.5s ease-in-out infinite alternate;
+	}
+	@-webkit-keyframes neon1 {
+	from {
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+	}
+	to {
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+	}
+	}
+	li {
+		list-style: none;
+	}
+	body>section>div:last-of-type {
+		width: 200px;
+		height: 200px;
+		transform-style: preserve-3d;
+		transform: rotateX(13deg);
+		animation: move 30s linear infinite;
+	}
+	body>section>div:last-of-type>ul {
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 50px;
+		top: 30px;
+		transform-style: preserve-3d;
+	}
+	body>section>div:last-of-type>ul>li {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: all 2s ease;
+		background: url("/img/1.jpg") no-repeat center center;
+	}
+	body>section>div:last-of-type>ul>li:nth-child(1) {
+		transform: rotateX(0deg) translateZ(50px);
+	}
+	body>section>div:last-of-type>ul>li:nth-child(2) {
+		transform: rotateY(180deg) translateZ(50px);
+	}
+	body>section>div:last-of-type>ul>li:nth-child(3) {
+		transform: rotateX(-90deg) translateZ(50px);
+	}
+	body>section>div:last-of-type>ul>li:nth-child(4) {
+		transform: rotateX(90deg) translateZ(50px);
+	}
+	body>section>div:last-of-type>ul>li:nth-child(5) {
+		transform: rotateY(-90deg) translateZ(50px);
+	}
+	body>section>div:last-of-type>ul>li:nth-child(6) {
+		transform: rotateY(90deg) translateZ(50px);
+	}
+	body>section>div:last-of-type>ol {
+		width: 800px;
+		height: 400px;
+		position: absolute;
+		left: 0;
+		top: -20px;
+		transform-style: preserve-3d;
+	}
+	body>section>div:last-of-type>ol>li {
+		width: 200px;
+		height: 200px;
+		background: #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0.3;
+		transition: all 3s ease;
+	}
+	body>section>div:last-of-type>ol>li {
+		background: url("../img/1.jpg") no-repeat center center;
+	}
+	body>section>div:last-of-type>ol>li:nth-child(1) {
+		transform: rotateX(0deg) translateZ(100px);
+	}
+	body>section>div:last-of-type>ol>li:nth-child(2) {
+		transform: rotateY(180deg) translateZ(100px);
+	}
+	body>section>div:last-of-type>ol>li:nth-child(3) {
+		transform: rotateX(-90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type>ol>li:nth-child(4) {
+		transform: rotateX(90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type>ol>li:nth-child(5) {
+		transform: rotateY(-90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type>ol>li:nth-child(6) {
+		transform: rotateY(90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type:hover>ul>li {
+		transform: translateZ(100px);
+		width: 200px;
+		height: 200px;
+		opacity: 0.8;
+		left: -50px;
+		top: -50px;
+	}
+	body>section>div:last-of-type:hover ul li:nth-child(2) {
+		transform: rotateY(180deg) translateZ(100px);
+	}
+	body>section>div:last-of-type:hover ul li:nth-child(3) {
+		transform: rotateX(-90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type:hover ul li:nth-child(4) {
+		transform: rotateX(90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type:hover ul li:nth-child(5) {
+		transform: rotateY(-90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type:hover ul li:nth-child(6) {
+		transform: rotateY(90deg) translateZ(100px);
+	}
+	body>section>div:last-of-type:hover>ol>li {
+		transform: translateZ(300px);
+		width: 400px;
+		height: 400px;
+		opacity: 0.8;
+		left: -100px;
+		top: -100px;
+	}
+	body>section>div:last-of-type:hover ol li:nth-child(2) {
+		transform: rotateY(180deg) translateZ(300px);
+	}
+	body>section>div:last-of-type:hover ol li:nth-child(3) {
+		transform: rotateX(-90deg) translateZ(300px);
+	}
+	body>section>div:last-of-type:hover ol li:nth-child(4) {
+		transform: rotateX(90deg) translateZ(300px);
+	}
+	body>section>div:last-of-type:hover ol li:nth-child(5) {
+		transform: rotateY(-90deg) translateZ(300px);
+	}
+	body>section>div:last-of-type:hover ol li:nth-child(6) {
+		transform: rotateY(90deg) translateZ(300px);
+	}
+	@keyframes move {
+	from {
+	transform: rotateX(13deg) rotateY(360deg) rotateZ(0deg);
+	}
+	to {
+	transform: rotateX(13deg) rotateY(0deg) rotateZ(0deg);
+	}
+}
+</style>
+</head>
+<body>
+<section>
+  <div>
+    <p>比心♥</p>
+  </div>
+  <div class="box">
+    <ul class="minbox">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ol class="maxbox">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+</section>
+</body>
+</html>
